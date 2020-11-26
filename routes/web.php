@@ -47,7 +47,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes([
     'verify'   => false, // メール確認機能（※5.7系以上のみ）
-    'register' => true, // デフォルトの登録機能OFF
+    'register' => false, // デフォルトの登録機能OFF
     'reset'    => false,  // メールリマインダー機能ON
 ]);
 
